@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* CONTENITORE */
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LATO SINISTRO */
+
+.slider {
+    width: 55%;
+    height: 60vh;
+    background-color: green;
+}
+
+/* LATO DESTRO */
+
+.thumbnails {
+    width: 15%;
+    height: 60vh;
+    background-color: red;
+    position: relative;
+}
+
+/* FORMATO IMG */
+
+.item {
+    height: 60vh;
+} 
+
+.item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* DIVISIONE IMG IN 5 */
+
+.thumbnails .item {
+    height: calc(60vh / 5);  
+    object-fit: cover;
+}
+
