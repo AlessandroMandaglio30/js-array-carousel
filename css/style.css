@@ -49,3 +49,23 @@
     object-fit: cover;
 }
 
+.sopra,
+.sotto{
+    color: white;
+    position: absolute;
+    left: 45%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    line-height: 31px;
+    cursor: pointer;
+}
+.sopra {
+    top: 1%;
+}
+
+.sotto {
+    bottom: 1%;
+}
