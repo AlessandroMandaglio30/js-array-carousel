@@ -18,7 +18,7 @@
 .slider {
     width: 55%;
     height: 60vh;
-    background-color: green;
+    background-color: black;
 }
 
 /* LATO DESTRO */
@@ -26,7 +26,6 @@
 .thumbnails {
     width: 15%;
     height: 60vh;
-    background-color: red;
     position: relative;
 }
 
@@ -34,12 +33,14 @@
 
 .item {
     height: 60vh;
+    background-color: black;   
 } 
 
 .item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: 0.5;
 }
 
 /* DIVISIONE IMG IN 5 */
@@ -57,7 +58,7 @@
     text-align: center;
     width: 30px;
     height: 30px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0);
     border-radius: 50%;
     line-height: 31px;
     cursor: pointer;
@@ -69,3 +70,4 @@
 .sotto {
     bottom: 1%;
 }
+
