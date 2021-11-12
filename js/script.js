@@ -43,3 +43,58 @@ for (let i = 0; i < items.length; i++) {
 }
 
 document.querySelector(".small").classList.add("active");
+
+let activeItem = 0;
+
+const itemsImg = document.getElementsByClassName("item");
+itemsImg[activeItem].classList.add("active");
+
+const smallImg = document.getElementsByClassName("small");
+smallImg[activeItem].classList.add("active");
+
+const sopra = document.querySelector('.sopra');
+const sotto = document.querySelector('.sotto');
+
+sotto.addEventListener('click', function () {
+
+    if (activeItem < items.length - 1) {
+        itemsImg[activeItem].classList.remove('active');
+        smallImg[activeItem].classList.remove('active');
+
+        activeItem++;
+
+        itemsImg[activeItem].classList.add('active');
+        smallImg[activeItem].classList.add('active');
+
+    } else if (activeItem = items.length - 1) {
+
+        itemsImg[activeItem].classList.remove('active');
+        smallImg[activeItem].classList.remove('active');
+
+        itemsImg[0].classList.add('active');
+        smallImg[0].classList.add('active');
+        activeItem = 0;
+    }
+})
+
+sopra.addEventListener('click', function () {
+
+    if (activeItem > 0) {
+        itemsImg[activeItem].classList.remove('active');
+        smallImg[activeItem].classList.remove('active');
+
+        activeItem--;
+
+        itemsImg[activeItem].classList.add('active');
+        smallImg[activeItem].classList.add('active');
+
+    } else if (activeItem == 0) {
+
+        itemsImg[0].classList.remove('active');
+        smallImg[0].classList.remove('active');
+
+        itemsImg[items.length - 1].classList.add('active');
+        smallImg[items.length - 1].classList.add('active');
+        activeItem = items.length - 1;
+    }
+})
