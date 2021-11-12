@@ -27,27 +27,31 @@
     width: 15%;
     height: 60vh;
     position: relative;
+    background-color: black;
 }
 
 /* FORMATO IMG */
 
 .item {
     height: 60vh;
-    background-color: black;   
+    display: none;
+    position: relative;
 } 
 
-.item img {
+.item img,
+.small img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: 0.5;
 }
+
+
 
 /* DIVISIONE IMG IN 5 */
 
-.thumbnails .item {
-    height: calc(60vh / 5);  
-    object-fit: cover;
+.thumbnails .small {
+    height: calc(60vh / 5); 
+    opacity: 0.5;
 }
 
 .sopra,
@@ -71,3 +75,19 @@
     bottom: 1%;
 }
 
+.items-container .active{
+    display: block;
+}
+
+.testo{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    color: white;
+    text-align: right;
+}
+
+.thumbnails-container .active{
+    opacity: 1;
+    border: 2px solid lightgray;
+}
