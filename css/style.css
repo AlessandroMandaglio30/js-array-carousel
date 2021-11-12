@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: lightgreen;
 }
 
 /* LATO SINISTRO */
@@ -18,7 +19,6 @@
 .slider {
     width: 55%;
     height: 60vh;
-    background-color: black;
 }
 
 /* LATO DESTRO */
@@ -27,7 +27,6 @@
     width: 15%;
     height: 60vh;
     position: relative;
-    background-color: black;
 }
 
 /* FORMATO IMG */
@@ -43,6 +42,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 40px;
 }
 
 
@@ -52,6 +52,7 @@
 .thumbnails .small {
     height: calc(60vh / 5); 
     opacity: 0.5;
+    filter: blur(3px);
 }
 
 .sopra,
@@ -89,5 +90,6 @@
 
 .thumbnails-container .active{
     opacity: 1;
-    border: 2px solid lightgray;
+    border-radius: 2px solid lightgray;
+    filter: blur(0);
 }
